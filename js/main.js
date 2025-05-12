@@ -15,3 +15,11 @@ fruits.forEach(fruit => {
     li.textContent = fruit;
     list.appendChild(li);
 });
+
+// CSSスタイルの変更
+const colorBtn = document.getElementById("changeColorBtn");
+const colorText = document.getElementById("colorText");
+
+colorBtn.addEventListener("click", () =>{
+    colorText.style.color = "red";
+});
