@@ -42,3 +42,13 @@ const classTarget = document.getElementById("classTarget");
 classBtn.addEventListener("click", () => {
     classTarget.classList.toggle("highlight");
 });
+
+// 入力値の取得
+const nameInput = document.getElementById("nameInput");
+const showNameBtn = document.getElementById("showNameBtn");
+const outputText = document.getElementById("outputText");
+
+showNameBtn.addEventListener("click", () => {
+    const value = nameInput.value;
+    outputText.textContent = 'こんにちは、${value}さん！';
+});
