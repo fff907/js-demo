@@ -34,3 +34,11 @@ removeBtn.addEventListener("click", () => {
         lastItem.remove();
     }
 });
+
+// クラスの追加／削除
+const classBtn = document.getElementById("classBtn");
+const classTarget = document.getElementById("classTarget");
+
+classBtn.addEventListener("click", () => {
+    classTarget.classList.toggle("highlight");
+});
