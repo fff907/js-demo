@@ -50,5 +50,5 @@ const outputText = document.getElementById("outputText");
 
 showNameBtn.addEventListener("click", () => {
     const value = nameInput.value;
-    outputText.textContent = ‵こんにちは、${value}さん！‵;
+    outputText.textContent = `こんにちは、${value}さん！`;
 });
