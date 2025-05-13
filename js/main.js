@@ -23,3 +23,14 @@ const colorText = document.getElementById("colorText");
 colorBtn.addEventListener("click", () =>{
     colorText.style.color = "red";
 });
+
+// 要素の削除
+const removeBtn = document.getElementById("removeBtn");
+const removeList = document.getElementById("removeList");
+
+removeBtn.addEventListener("click", () => {
+    const lastItem =removeList.lastElementChild;
+    if (lastItem) {
+        lastItem.remove();
+    }
+});
