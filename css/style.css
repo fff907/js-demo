@@ -7,14 +7,12 @@
 }
 
 #fadeText {
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
-  background: #fffae6;
-  border: 1px solid #f99;
+  background: #fff8dc;
   padding: 16px;
-  margin-top: 12px;
+  margin: 16px 0;
+  border: 2px dashed crimson;
   font-size: 18px;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
 }
 
 .fade-hidden {
