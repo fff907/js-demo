@@ -10,6 +10,9 @@
   opacity: 1;
   visibility: visible;
   transition: opacity 0.5s ease, visibility 0.5s ease;
+  background: #ffe;
+  padding: 8px;
+  border: 1px solid #ccc;
 }
 
 .fade-hidden {
