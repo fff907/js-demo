@@ -60,3 +60,12 @@ const fadeText = document.getElementById("fadeText");
 fadeToggleBtn.addEventListener("click", () => {
   fadeText.classList.toggle("fade-hidden");
 });
+
+// イベントの無効化
+const link = document.getElementById("linkPrevent");
+const preventMessage = document.getElementById("preventMessage");
+
+link.addEventListener("click", (e) => {
+    e.preventDefault();
+    preventDefault.textContent = "リンクは無効化されました！"
+});
