@@ -67,5 +67,5 @@ const preventMessage = document.getElementById("preventMessage");
 
 link.addEventListener("click", (e) => {
     e.preventDefault();
-    preventDefault.textContent = "リンクは無効化されました！"
+    preventMessage.textContent = "リンクは無効化されました！"
 });
