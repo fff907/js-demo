@@ -58,5 +58,5 @@ const fadeToggleBtn = document.getElementById("fadeToggleBtn");
 const fadeText = document.getElementById("fadeText");
 
 fadeToggleBtn.addEventListener("click", () => {
-    fadeText.classList.toggle("fade-hidden");
+  fadeText.classList.toggle("fade-hidden");
 });
