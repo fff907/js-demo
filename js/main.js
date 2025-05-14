@@ -52,3 +52,11 @@ showNameBtn.addEventListener("click", () => {
     const value = nameInput.value;
     outputText.textContent = `こんにちは、${value}さん！`;
 });
+
+// フェードアニメーション
+const fadeToggleBtn = document.getElementById("fadeToggleBtn");
+const fadeText = document.getElementById("fadeText");
+
+fadeToggleBtn.addEventListener("click", () => {
+    fadeText.classList.toggle("fade-hidden");
+});
