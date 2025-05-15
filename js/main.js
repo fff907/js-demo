@@ -69,3 +69,23 @@ link.addEventListener("click", (e) => {
     e.preventDefault();
     preventMessage.textContent = "リンクは無効化されました！"
 });
+
+// 非同期データ取得(AJAX)
+document.getElementById('loadUser').addEventListener('click', function () {
+    fetch('https://randomuser.me/api/')
+    .then(response => response.json())
+    .then(data => {
+        const user = data.results[0];
+        const userHTML = `
+        <p><strong>名前：</strong>${user.name.first} ${user.name.last}</p>
+        <p><strong>メール：</strong>${user.email}</p>
+        <img src="${user.picture.medium}" alt="ユーザー画像">
+        `;
+        document.getElementById('userInfo').innerHTML = userHTML;
+    })
+    .catch(error => {
+        console.error('データの取得に失敗しました', error);
+        document.getElementById('userInfo').textContent = 'ユーザー情報の取得に失敗しました。';
+
+    });
+});
