@@ -120,3 +120,5 @@ document.querySelectorAll(".toggle-btn").forEach(button => {
         content.style.display = content.style.display === "block" ? "none" : "block";
     });
 });
+
+// モーダルウィンドウ
