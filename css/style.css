@@ -31,3 +31,20 @@
 .tab-content.hidden {
   display: none;
 }
+
+.toggle-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #eee;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-content {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-left: 4px solid #007BFF;
+}
