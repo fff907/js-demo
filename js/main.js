@@ -122,3 +122,47 @@ document.querySelectorAll(".toggle-btn").forEach(button => {
 });
 
 // モーダルウィンドウ
+// モーダルトリガーをクリックしたとき
+document.querySelectorAll('.modal-trigger').forEach(trigger => {
+    trigger.addEventListener('click', function (e) {
+        e.preventDefault();
+        // デフォルトのリンク動作を止める
+
+        const targetId = this.getAttribute('href');
+        // 例：#modal1
+        const modal = document.querySelector(targetId);
+
+        // 背景スクロールを停止
+        document.body.style.overflow = 'hidden';
+
+        // モーダル表示・スクロール位置リセット
+        modal.style.display = 'block';
+        const content = modal.querySelector('.modal-content');
+        content.scrollTop = 0;
+
+        // URLのハッシュを更新
+        window.location.hash = targetId;
+    });
+});
+
+// 閉じるボタンを押したとき
+document.querySelectorAll('.close-btn').forEach(button => {
+    button.addEventListener('click', function(e){
+        e.preventDefault();
+        closeModal(this.closest('.modal'));
+    });
+});
+
+// オーバーレイをクリックしたとき
+document.querySelectorAll('.modal-overlay').forEach(overlay => {
+    overlay.addEventListener('click', function () {
+        closeModal(this.closest('.modal'));
+    });
+});
+
+// モーダルを閉じる処理(共通化)
+function closeModal(modal) {
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+    window.history.pushState('', document.title, window.location.pathname);
+}
