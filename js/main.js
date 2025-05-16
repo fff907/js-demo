@@ -89,3 +89,26 @@ document.getElementById('loadUser').addEventListener('click', function () {
 
     });
 });
+
+// タブ切り替え
+const tabButtons = document.querySelectorAll('.tab-button');
+const tabContents = document.querySelectorAll('.tab-content');
+
+tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const tabNumber = button.getAttribute('data-tab');
+
+        // ボタンのactive切替
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        // コンテンツの表示切替
+        tabContents.forEach(content => {
+            if (content.id === `tab-${tabNumber}`) {
+                content.classList.remove('hidden');
+            } else {
+                content.classList.add('hidden');
+            }
+        });
+    });
+});
