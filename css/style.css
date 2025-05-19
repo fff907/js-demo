@@ -10,21 +10,21 @@ body {
 
 /* セクションの共通スタイル */
 section {
-  padding: 20px;
-  margin: 40px 0;
+  padding: 30px;
+  margin: 50px 0;
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 10px;
   background-color: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 /* セクション見出し */
 section h2 {
-  margin-bottom: 15px;
-  font-size: 1.5em;
+  margin-bottom: 20px;
+  font-size: 1.6em;
   color: #007BFF;
   border-bottom: 2px solid #007BFF;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
 }
 
 /* ボタン共通スタイル */
@@ -89,13 +89,14 @@ button:hover,
   display: block;
   width: 100%;
   text-align: left;
-  padding: 10px;
-  margin: 5px 0;
-  background-color: #eee;
-  border: none;
-  cursor: pointer;
+  padding: 12px;
+  margin: 8px 0;
+  background-color: #f0f0f0; /* ← #eee から少し濃く */
+  border: 1px solid #ccc;
   border-radius: 4px;
   font-weight: bold;
+  color: #333;
+  transition: background-color 0.3s ease;
 }
 
 .toggle-content {
