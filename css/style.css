@@ -70,6 +70,12 @@ button:hover,
 }
 
 /* タブ切り替え */
+#tabs-demo::after {
+  content: "";
+  display: block;
+  height: 30px;
+}
+
 #tabs-demo h2::after {
   content: "";
   display: block;
