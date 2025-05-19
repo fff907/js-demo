@@ -76,12 +76,6 @@ button:hover,
   height: 30px;
 }
 
-#tabs-demo h2::after {
-  content: "";
-  display: block;
-  height: 50px;
-}
-
 .tab-section {
   border: 1px solid #ccc;
   border-radius: 8px;
