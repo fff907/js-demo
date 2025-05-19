@@ -21,7 +21,6 @@ section {
 /* セクション見出し */
 section h2 {
   margin-bottom: 20px;
-  padding-bottom: 20px;
   font-size: 1.6em;
   color: #007BFF;
   border-bottom: 2px solid #007BFF;
@@ -38,35 +37,14 @@ button,
   color: white;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   font-size: 0.95em;
 }
 
+/* ホバーエフェクト */
 button:hover,
-.tab-button:hover,
 .close-btn:hover {
   background-color: #0056b3;
-}
-
-/* 強調クラス */
-.highlight {
-  color: white;
-  background-color: crimson;
-  padding: 4px 8px;
-  border-radius: 4px;
-  transition: all 0.3s ease;
-}
-
-/* フェード表示 */
-#fadeText {
-  opacity: 1;
-  transition: opacity 0.5s ease;
-  visibility: visible;
-}
-
-.fade-hidden {
-  opacity: 0 !important;
-  visibility: hidden !important;
 }
 
 /* タブ切り替え */
@@ -84,7 +62,6 @@ button:hover,
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
-  position: static;
 }
 
 .tab-button {
@@ -92,34 +69,46 @@ button:hover,
   border-radius: 6px;
   font-size: 0.9em;
   color: white;
-  cursor: pointer;
   border: none;
+  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
+/* タブ個別色 */
 .tab1 {
   background-color: #007BFF;
 }
-
 .tab2 {
   background-color: #28a745;
 }
-
 .tab3 {
   background-color: #fd7e14;
 }
 
-.tab-button:hover {
-  filter: brightness(1.1);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+/* ホバー個別色（明るめ） */
+.tab1:hover {
+  background-color: #339AFF;
+}
+.tab2:hover {
+  background-color: #4dcc5d;
+}
+.tab3:hover {
+  background-color: #ffa245;
 }
 
+/* タブ内容の切り替え */
 .tab-content {
   margin-top: 10px;
 }
-
 .tab-content.hidden {
   display: none;
+}
+
+/* アクティブ状態 */
+.tab-button.active {
+  font-weight: bold;
+  filter: brightness(1.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 /* アコーディオン */
@@ -135,6 +124,11 @@ button:hover,
   font-weight: bold;
   color: #333;
   transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #e0f0ff;
+  color: #007BFF;
 }
 
 .toggle-content {
@@ -182,7 +176,28 @@ button:hover,
   margin: 0 auto;
 }
 
-/* 入力フォームなど */
+/* フェード表示 */
+#fadeText {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  visibility: visible;
+}
+
+.fade-hidden {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+/* 強調クラス */
+.highlight {
+  color: white;
+  background-color: crimson;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+/* 入力フォーム */
 input[type="text"] {
   padding: 6px 10px;
   border: 1px solid #ccc;
@@ -199,7 +214,6 @@ a {
   color: #007BFF;
   text-decoration: underline;
 }
-
 a:hover {
   text-decoration: none;
 }
