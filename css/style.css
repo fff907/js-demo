@@ -21,6 +21,7 @@ section {
 /* セクション見出し */
 section h2 {
   margin-bottom: 20px;
+  padding-bottom: 20px;
   font-size: 1.6em;
   color: #007BFF;
   border-bottom: 2px solid #007BFF;
