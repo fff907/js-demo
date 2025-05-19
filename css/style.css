@@ -1,3 +1,53 @@
+/* 全体レイアウト */
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  background-color: #f7f9fc;
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* セクションの共通スタイル */
+section {
+  padding: 20px;
+  margin: 40px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* セクション見出し */
+section h2 {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  color: #007BFF;
+  border-bottom: 2px solid #007BFF;
+  padding-bottom: 5px;
+}
+
+/* ボタン共通スタイル */
+button,
+.tab-button,
+.close-btn {
+  padding: 8px 14px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.95em;
+}
+
+button:hover,
+.tab-button:hover,
+.close-btn:hover {
+  background-color: #0056b3;
+}
+
+/* 強調クラス */
 .highlight {
   color: white;
   background-color: crimson;
@@ -6,6 +56,7 @@
   transition: all 0.3s ease;
 }
 
+/* フェード表示 */
 #fadeText {
   opacity: 1;
   transition: opacity 0.5s ease;
@@ -17,6 +68,7 @@
   visibility: hidden !important;
 }
 
+/* タブ切り替え */
 .tab-buttons {
   display: flex;
   gap: 10px;
@@ -32,6 +84,7 @@
   display: none;
 }
 
+/* アコーディオン */
 .toggle-btn {
   display: block;
   width: 100%;
@@ -41,14 +94,19 @@
   background-color: #eee;
   border: none;
   cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
 }
 
 .toggle-content {
   padding: 10px;
   background-color: #f9f9f9;
   border-left: 4px solid #007BFF;
+  margin-bottom: 10px;
+  display: none;
 }
 
+/* モーダルウィンドウ */
 .modal {
   display: none;
   position: fixed;
@@ -72,4 +130,27 @@
   width: 300px;
   max-width: 90%;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  border-radius: 6px;
+}
+
+/* 入力フォームなど */
+input[type="text"] {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 60%;
+  margin-right: 8px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
 }
