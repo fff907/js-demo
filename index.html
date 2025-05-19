@@ -83,14 +83,16 @@
     <!-- セクション10-1：タブ切り替え -->
     <section id="tabs-demo">
         <h2>タブ切り替え</h2>
-        <div class="tab-buttons">
-            <button class="tab-button active" data-tab="1">タブ1</button>
-            <button class="tab-button" data-tab="2">タブ2</button>
-            <button class="tab-button" data-tab="3">タブ3</button>
+        <div class="tab-section">
+            <div class="tab-buttons">
+                <button class="tab-button active" data-tab="1">タブ1</button>
+                <button class="tab-button" data-tab="2">タブ2</button>
+                <button class="tab-button" data-tab="3">タブ3</button>
+            </div>
+            <div class="tab-content" id="tab-1">タブ1の内容です。</div>
+            <div class="tab-content hidden" id="tab-2">タブ2の内容です。</div>
+            <div class="tab-content hidden" id="tab-3">タブ3の内容です。</div>
         </div>
-        <div class="tab-content" id="tab-1">タブ1の内容です。</div>
-        <div class="tab-content hidden" id="tab-2">タブ2の内容です。</div>
-        <div class="tab-content hidden" id="tab-3">タブ3の内容です。</div>
     </section>
 
     <!-- セクション10-2：アコーディオン -->
@@ -122,8 +124,8 @@
         <div id="modal1" class="modal">
             <div class="modal-overlay"></div>
             <div class="modal-content">
-            <button class="close-btn">閉じる</button>
             <p>これはモーダルの中身です。</p>
+            <button class="close-btn">閉じる</button>
             </div>
         </div>
     </section>

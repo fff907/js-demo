@@ -69,15 +69,30 @@ button:hover,
 }
 
 /* タブ切り替え */
+.tab-section {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-top: 10px;
+}
+
 .tab-buttons {
   display: flex;
   gap: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #007BFF;
 }
 
 .toggle-btn:hover {
   background-color: #007BFF;
   color: white;
+}
+
+.tab-content {
+  margin-top: 10px;
 }
 
 .tab-button.active {
@@ -137,6 +152,16 @@ button:hover,
   max-width: 90%;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   border-radius: 6px;
+  text-align: center;
+}
+
+.modal-content p {
+  margin-bottom: 20px;
+}
+
+.modal-content .close-btn {
+  display: inline-block;
+  margin: 0 auto;
 }
 
 /* 入力フォームなど */
