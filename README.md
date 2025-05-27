@@ -37,12 +37,12 @@
 
 ## 🔧 フォルダ構成
 
-js-demo/
-├── index.html # デモページ本体
-├── css/
-│ └── style.css # スタイル定義
-└── js/
-└── main.js # JavaScript処理を記述
+js-demo/  
+├── index.html # デモページ本体  
+├── css/  
+│ └── style.css # スタイル定義  
+└── js/  
+└── main.js # JavaScript処理を記述  
 
 
 ## 📝 今後の課題
