@@ -3,35 +3,35 @@ body {
   font-family: sans-serif;
   line-height: 1.6;
   background-color: #f7f9fc;
-  padding: 40px;
-  max-width: 800px;
+  padding: 2.5rem;
+  max-width: 50rem;
   margin: 0 auto;
 }
 
 /* セクションの共通スタイル */
 section {
-  padding: 30px;
-  margin: 50px 0;
+  padding: 1.875rem;
+  margin: 3.125rem 0;
   border: 1px solid #ddd;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   background-color: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 /* セクション見出し */
 section h2 {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   font-size: 1.6em;
   color: #007BFF;
   border-bottom: 2px solid #007BFF;
-  padding-bottom: 8px;
+  padding-bottom: 0.5rem;
 }
 
 /* ボタン共通スタイル */
 button,
 .tab-button,
 .close-btn {
-  padding: 8px 14px;
+  padding: 0.5rem 0.875rem;
   border: none;
   background-color: #007BFF;
   color: white;
@@ -51,21 +51,21 @@ button:hover,
 .tab-section {
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 20px;
+  padding: 1.25rem;
   background-color: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  margin-top: 30px;
+  margin-top: 1.875rem;
   position: relative;
 }
 
 .tab-buttons {
   display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
+  gap: 0.625rem;
+  margin-bottom: 1.25rem;
 }
 
 .tab-button {
-  padding: 8px 14px;
+  padding: 0.5rem 0.875rem;
   border-radius: 6px;
   font-size: 0.9em;
   color: white;
@@ -98,7 +98,7 @@ button:hover,
 
 /* タブ内容の切り替え */
 .tab-content {
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 .tab-content.hidden {
   display: none;
@@ -116,8 +116,8 @@ button:hover,
   display: block;
   width: 100%;
   text-align: left;
-  padding: 12px;
-  margin: 8px 0;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
   background-color: #f0f0f0;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -132,10 +132,10 @@ button:hover,
 }
 
 .toggle-content {
-  padding: 10px;
+  padding: 0.625rem;
   background-color: #f9f9f9;
   border-left: 4px solid #007BFF;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
   display: none;
 }
 
@@ -159,8 +159,8 @@ button:hover,
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
   background: white;
-  padding: 20px;
-  width: 300px;
+  padding: 1.25rem;
+  width: 18.75rem;
   max-width: 90%;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   border-radius: 6px;
@@ -168,7 +168,7 @@ button:hover,
 }
 
 .modal-content p {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .modal-content .close-btn {
@@ -192,22 +192,22 @@ button:hover,
 .highlight {
   color: white;
   background-color: crimson;
-  padding: 4px 8px;
+  padding: 0.25rem 0.5rem;
   border-radius: 4px;
   transition: all 0.3s ease;
 }
 
 /* 入力フォーム */
 input[type="text"] {
-  padding: 6px 10px;
+  padding: 0.375rem 0.625rem;
   border: 1px solid #ccc;
   border-radius: 4px;
   width: 60%;
-  margin-right: 8px;
+  margin-right: 0.5rem;
 }
 
 p {
-  margin: 10px 0;
+  margin: 0.625rem 0;
 }
 
 a {
